@@ -3,6 +3,7 @@
 
 ### Table of Contents
 - [Stable Diffusion Demos and Activities](#stable-diffusion-demos-and-activities)
+    - [Table of Contents](#table-of-contents)
 - [An AI Model in the Wild: Stable Diffusion](#an-ai-model-in-the-wild-stable-diffusion)
   - [How do diffusion models work?](#how-do-diffusion-models-work)
   - [Foundational Research:](#foundational-research)
@@ -11,7 +12,7 @@
     - [Stable Diffusion vs DALL-E](#stable-diffusion-vs-dall-e)
 - [Diffusion Image Generator Demo Activity](#diffusion-image-generator-demo-activity)
   - [Diffusers Library](#diffusers-library)
-    - [Stable Diffusion Demo Notebook](#stable-diffusion-demo-notebook)
+    - [Stable Diffusion Demo Notebooks](#stable-diffusion-demo-notebooks)
   - [Stable Diffusion Activity Notebook](#stable-diffusion-activity-notebook)
     - [Methods:](#methods)
     - [Notebook Contents:](#notebook-contents)
@@ -93,9 +94,13 @@ We are specifically going to be using the Huggingface Diffusers library to build
 For this demo, we are going to be focusing on using the current version of stable diffusion (v1.4) for inference (we will not be training the model, just defining the input parameters)
 -  See using [diffusers for inference](https://huggingface.co/docs/diffusers/using-diffusers/conditional_image_generation) documentation to learn more.
 
-### Stable Diffusion Demo Notebook 
+### Stable Diffusion Demo Notebooks 
 Here is a functional 
-[Stable Diffusion Colab Walkthrough](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/stable_diffusion.ipynb) you can preview to see how stable diffusion is deployed using Google Colab + Diffusers Library.
+[Stable Diffusion Inference Colab Walkthrough](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/stable_diffusion.ipynb) you can preview to see how stable diffusion inference is deployed using Google Colab + Diffusers Library.
+- Try running the code and reading the descriptions. Don't worry if it doesn't all make sense yet, this is mostly to practice the mechanics of running such a notebook.
+- Make note of unfamiliar terms, to reasearch later
+
+[General Diffusers Tutorial Walkthrough](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb) Option Demo Notebook that goes into more details about the diffuser library and how you might use it to leverage models beyond stable diffusion.
 ***
 ## Stable Diffusion Activity Notebook
 

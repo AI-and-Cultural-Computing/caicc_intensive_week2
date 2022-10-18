@@ -11,6 +11,7 @@ This is a live document that will be updated based on discussion topics and acti
 		- [Further References](#further-references)
 - [Engaging With Machine Learning Research](#engaging-with-machine-learning-research)
 	- [Where do I find the research?](#where-do-i-find-the-research)
+- [Tuesday Discussion Notes](#tuesday-discussion-notes)
 
 
 # A.I. Terminology 
@@ -103,4 +104,7 @@ Machine Learning is a unique and fast-moving field, with novel models, approache
   - Attempts to implement best practices surrounding licensing, ethical data use, and bias disclosure
   - Has an active community and discussion spaces to discuss and 
   - Recently integrated with and now hosts Gradio Apps - a ML demo tool, to allow you to quickly develop interfaces for your models.
+ 
+ ***
+ # Tuesday Discussion Notes
  
