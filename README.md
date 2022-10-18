@@ -21,6 +21,7 @@ You can find the current [Syllabus Here](https://github.com/AI-and-Cultural-Comp
 - You Look Like a Thing chs 4-6
 ***
 ## This week
+[Week 2 Note Document](CAICC_Week_2_Notes.md) - Living Doc
 ### Tuesday
  - Discussion: You Look Like a Thing reading
  - Activity: Share visualization of basic neural networks

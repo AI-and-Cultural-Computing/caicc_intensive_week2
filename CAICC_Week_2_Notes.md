@@ -1,3 +1,23 @@
+
+## Week 2 Notes
+This is a live document that will be updated based on discussion topics and activities as the week progresses.
+
+### Table of Contents:
+- [A.I. Terminology](#ai-terminology)
+  - [Models, methods, and training, oh my!](#models-methods-and-training-oh-my)
+    - [So how do you train a model?](#so-how-do-you-train-a-model)
+      - [General Approaches in Machine Learning:](#general-approaches-in-machine-learning)
+  - [Terms that keep coming up...](#terms-that-keep-coming-up)
+    - [Further References](#further-references)
+- [Engaging With Machine Learning Research](#engaging-with-machine-learning-research)
+  - [Where do I find the research?](#where-do-i-find-the-research)
+- [An AI Model in the Wild: Stable Diffusion](#an-ai-model-in-the-wild-stable-diffusion)
+  - [Foundational Research:](#foundational-research)
+  - [Model Released:](#model-released)
+    - [where is it?](#where-is-it)
+    - [Stable Diffusion vs DALL-E](#stable-diffusion-vs-dall-e)
+
+
 # A.I. Terminology 
 
 **Artificial Intelligence:** Broad term with cultural significance, ever-shifting and referring to applied, theoretical, and fantastical concepts of Computational Intelligence.
@@ -50,7 +70,7 @@ Mind you, these are broad approaches to training models - there are many differe
 ***Note:***
 *Most of what we are discussing during this intensive falls under the category of "Supervised Learning" - simply because there are more opportunities for human input and exploration (data selection, labeling, parameters, subjective evaluation) without getting too into statistics (unsupervised learning) or simulation/hardware (reinforcement Learning). The latter two are equally worthly of study and exploration and there are resources and support for those methods as well.* 
 
-## Terms that we've already seen, that we'll be seeing more of...
+## Terms that keep coming up...
  - **Neural Networks**: A sequence of ML algorithms that are loosely modeled after the brain's neural network ([see 3B1B Video for a refresher](https://www.youtube.com/watch?v=aircAruvnKk))
  - **Deep Learning**: Refers to architectures with multiple/hidden layers (most NN models are Deep Neural Networks)
 	 - Deep learning breaks down the feature recognition process and trains that too, allowing for more responsive and fine-tunable models (ex. the MINST NN example).
@@ -58,7 +78,7 @@ Mind you, these are broad approaches to training models - there are many differe
 - **Transformers**: Deep Learning Models that leverage parallel computing (think lots of GPU/RAM) to maximize **Long-Short-Term Memory** - this allows for the model to make predictions based on a larger problem context. 
 	- This makes transformers very popular for  **Natural Language Processing (NLP)** - where sentence and paragraph context can be factored into things like story generators, making them much more believable (ex. [AIDungeon](https://play.aidungeon.io/))
 - **DIffusion Models**: Models trained to remove noise from images. These models were originally designed to solve problems of thermodynamic equilibrium, by"denoise-ing" imagery representing entropy of fluid systems. 
-	- This process inadvertently made them good at generating images from random noise - which when guided by the addition of text or visual prompt - allows them to create much more creative 
+	- This process inadvertently made them good at generating novel images from random noise.
 - **Inference**: Is the process of running a model after it has been trained.  Inference is much less computationally intensive than training (in the case of extremely large models such as DALL-E, training is physically impossible on a consumer-grade computer). 
 	- Though a model's architecture is set after it is trained, there are still a number of input parameters you can pass along with your data, during **inference** in order to control the final output. You will recall from Week 1 that [playgroundai](https://playgroundai.com/) allowed you to change the output dimensions, the prompt guidance, detail, and other parameters along with your image generation prompt.
 
@@ -79,19 +99,48 @@ Last week, when we explored [playgroundai](https://playgroundai.com/)  Text-to-I
 Machine Learning is a unique and fast-moving field, with novel models, approaches, papers being released daily. Luckily, many ML researchers release model code and datasets alongside their papers, so that you can experiment with it yourself. 
 
 ## Where do I find the research?
- - [Arxiv - Free Open Access Research Archive](https://arxiv.org/list/cs.AI/recent) - Papers released daily (if you see a ML paper elsewhere on the web, chances are it will redirect here) - Available in PDF, often with links to code. 
+ - [Arxiv - Free Open Access Research Archive](https://arxiv.org/list/cs.AI/recent) - Papers released daily (if you see a ML paper elsewhere on the web, chances are it will redirect here) - Available in PDF, often with links to code, demos, datasets used. 
+   -   * ![Diffusion Model](images/Code_Data_on_Arxiv.png)
  - [Github](github.com) - Most research groups or individuals will have their paper's code hosted on github. If you find a paper or project that looks cool - check to see if they have a github, there may be additional resources or projects.
  - [Twitter](twitter.com) ... seriously, the ML research community is very active on Twitter. Impressive projects and papers are shared around quickly. If you start following ML researchers, or folks who engage with AI in a specific domain (business, Art, tech, gaming, policy, philosophy etc.) you will start to see ML discussions, demos, and tools regularly. 
  	- Here are a couple interesting folks to follow, to get you started:
+- [Huggingface.co](https://huggingface.co/) - Research Lab and Increasingly popular repository for ML Models, Datasets, and documentation
+  - Attempts to implement best practices surrounding licensing, ethical data use, and bias disclosure
+  - Has an active community and discussion spaces to discuss and 
+  - Recently integrated with and now hosts Gradio Apps - a ML demo tool, to allow you to quickly develop interfaces for your models.
  
-## An AI Model in the Wild: Stable Diffusion
-Stable Diffusion:
-1. released
-2. paper
-3. github
-4. huggingface/gradio
-5. twitter:
-	1. release announcement
-	2. reduction in RAM requirements (proliferation of clones)
-	3. Stand Alone Apps (PlaygroundAI)
-	4. App integrations (ex. Photoshop, Blender, AR)
+# An AI Model in the Wild: Stable Diffusion
+Stable Diffusion Text to Image Model:
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/32/A_photograph_of_an_astronaut_riding_a_horse_2022-08-28.png)
+
+*An image generated by Stable Diffusion based on the text prompt "a photograph of an astronaut riding a horse"*
+
+## Foundational Research:
+  * Early Paper implementing Diffusion: [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) (2015) 
+    * Paper training a model to reconstruct data after it has been diffused "yielding a highly flexible and tractable generative model of the data"
+  * [LAION - Large Scale Artificial Intelligence Open Network](https://laion.ai/) - Datasets that Stable Diffusion was Trained on (400m to 5 billion images!)
+    * [CLIP - Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) - Dataset was also labeled with another ML model!
+  * [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) (Dec, 2021) - introduces effective method of guiding image development in latent space
+
+## Model Released: 
+by StabilityAI under [OpenRAIL-M License](https://huggingface.co/spaces/CompVis/stable-diffusion-license) on [August 22nd, 2022](https://stability.ai/blog/stable-diffusion-public-release) ... like 1.5 months ago!
+
+### where is it?
+- [Hosted w/ demo on Huggingface](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original) (you can use huggingface libraries to use the model in your own colab code)
+
+- [Available on github](https://github.com/CompVis/stable-diffusion) (you could fork and build your own project with it, or look at what other work this research group is putting out)
+
+### Stable Diffusion vs DALL-E
+Stable Diffusion is open source, unlike the other large image generator model that you might have heard of... OpenAI's DALL-E released in 2021 requires you to pay to use their model (despite the company name, which would imply otherwise).
+
+In the 1.5 months that stable diffusion has been out, there have been 4 official version releases, many clones, stand-alone apps, and app integrations.
+
+Because of this, we've seen
+1. Reduction in RAM requirements, compatability with multiple different hardwares (proliferation of variations of the model)
+2. Stand Alone Apps and websites (huggingface gradio apps)
+3. App integrations with popular commercial tools (ex. Photoshop, Blender, AR)
+
+Because the original model is free and open source, many of these models and tools are likewise free and modifiable.
+
+This week, we are going to be exploring some libraries that make it easy for us to build our own Stable Diffusion Image Generator tools!
