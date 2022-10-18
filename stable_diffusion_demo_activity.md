@@ -1,6 +1,7 @@
 
 # Stable Diffusion Demos and Activities
 
+### Table of Contents
 - [Stable Diffusion Demos and Activities](#stable-diffusion-demos-and-activities)
 - [An AI Model in the Wild: Stable Diffusion](#an-ai-model-in-the-wild-stable-diffusion)
   - [How do diffusion models work?](#how-do-diffusion-models-work)
