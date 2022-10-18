@@ -12,8 +12,8 @@ You can find the current [Syllabus Here](https://github.com/AI-and-Cultural-Comp
 - Explored an AI app and popular model (AI Dungeon/Transformers)
 - Learned about AI/ML & Arts Curriculum at PCC
 ### Activities:
-   - [Intro to Notebooks notebook](intro_to_notebooks_and_tools.ipynb) - Overview of tools we will be using during the intensive <a href="https://githubtocolab.com/AI-and-Cultural-Computing/caicc_intensive_week1/blob/main/intro_to_notebooks_and_tools.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
-  - [Intro to Python](intro_to_python.ipynb) - Light introduction to the most popular programming language for Machine Learning <a href="https://githubtocolab.com/AI-and-Cultural-Computing/caicc_intensive_week1/blob/main/intro_to_python.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
+   - Intro to Notebooks notebook- Overview of tools we will be using during the intensive <a href="https://githubtocolab.com/AI-and-Cultural-Computing/caicc_intensive_week1/blob/main/intro_to_notebooks_and_tools.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
+  - Intro to Python - Light introduction to the most popular programming language for Machine Learning <a href="https://githubtocolab.com/AI-and-Cultural-Computing/caicc_intensive_week1/blob/main/intro_to_python.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
 
 
 ### Have read by this Tuesday
