@@ -9,6 +9,7 @@
   - [Foundational Research:](#foundational-research)
   - [Model Released:](#model-released)
     - [Where is it?](#where-is-it)
+    - [Prompt Generation Tip Guides](#prompt-generation-tip-guides)
     - [Stable Diffusion vs DALL-E](#stable-diffusion-vs-dall-e)
 - [Diffusion Image Generator Demo Activity](#diffusion-image-generator-demo-activity)
   - [Diffusers Library](#diffusers-library)
@@ -67,6 +68,11 @@ by StabilityAI under an [OpenRAIL-M License](https://huggingface.co/spaces/CompV
 
 
 - [Available on github](https://github.com/CompVis/stable-diffusion) (you could fork and build your own project with it, or look at what other work this research group is putting out)
+
+### Prompt Generation Tip Guides
+- Stable Diffusion Prompt Generator: https://huggingface.co/spaces/Gustavosta/MagicPrompt-Stable-Diffusion
+- https://www.howtogeek.com/833169/- how-to-write-an-awesome-stable-diffusion-prompt/amp/
+- https://twitter.com/davidad/status/1551143240065228800
 
 ### Stable Diffusion vs DALL-E
 Stable Diffusion is open source, unlike the other large image generator model that you might have heard of... OpenAI's DALL-E released in 2021 requires you to pay to use their model (despite the company name, which would imply otherwise).
@@ -160,7 +166,6 @@ Take note of the **4 tweakable options:**
 - Guidance Scale - how closely prompt is followed by model (`guidance_scale` keyword)
 - There is also a scheduler option (adjusts the method of denoising image - won't be used in this demo)
 
-You can loo
 ## STEP 2 - generating images with more control
 
 ### 2a.  Set the random seeds
