@@ -106,5 +106,26 @@ Machine Learning is a unique and fast-moving field, with novel models, approache
   - Recently integrated with and now hosts Gradio Apps - a ML demo tool, to allow you to quickly develop interfaces for your models.
  
  ***
- # Tuesday Discussion Notes
- 
+# Tuesday Discussion Notes
+
+## Data Conscious - Bias in Data
+## Emergent Properties
+- Complex systems theory
+   - Elements in a system that are influenced by each other tend to form groups and complex behaviors that are hard to predict based on constituent elements and initial state
+   - NN relationships are similarly difficult to analyze 
+
+## Ethical Responsabilities Surrouding AI use
+- Transparency and disclaimers around AI
+  - Especially when it's not clear that it's not a human on the other end.
+  - A limited solution that is emmerging: Model Cards - disclose bias, ethics, datasets etc. relating to a model (that are becoming a standard)
+  - https://www.kaggle.com/code/var0101/model-cards (Description of Model Cards)
+
+# Topics that merit further discussion:
+- Gradient of Descent
+- Activation Functions
+
+# LNN Demo - Basic Math behind Neural Nets
+- Simple Forward Pass Demo (Step by Step Visual) 
+  - https://ml4a.github.io/demos/simple_forward_pass/
+- Other Neural Netowrk Demos and Tutorials: https://ml4a.github.io/ml4a/
+- Recommended Reading for a more detailed understanding of NN, Weights, and Learning Rates. Make your Own Neural Network, Part 1 (little to no math prerequisites) - One of the Provided Texts.
