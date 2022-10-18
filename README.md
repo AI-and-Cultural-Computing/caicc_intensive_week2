@@ -45,7 +45,7 @@ You can find the current [Syllabus Here](https://github.com/AI-and-Cultural-Comp
 
 ### Activities:
 - Basic Neural Network Notebook (In Class)
-- Stable Diffusion Image Generation in Colab (Github & Colab Practice)
+- [Stable Diffusion Image Generation in Colab (Github & Colab Practice)](stable_diffusion_demo_activity.md)
 - Share-out Article/Paper of Interest on Slack
 
 ### Optional Activities
