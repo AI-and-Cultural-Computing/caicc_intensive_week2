@@ -64,8 +64,8 @@ You can find the current [Syllabus Here](https://github.com/AI-and-Cultural-Comp
   - This article on how LLMs aren't capable of logical reasoning: https://bdtechtalks.com/2022/07/25/large-language-models-cant-plan/
 - Data Readings:
   - Google's guide to ML Problem Framing: https://developers.google.com/machine-learning/problem-framing
-- 
+
 * * *
 
-#
+
 
