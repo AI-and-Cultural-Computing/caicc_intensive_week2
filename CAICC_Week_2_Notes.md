@@ -69,7 +69,7 @@ Mind you, these are broad approaches to training models - there are many differe
 ## Terms that keep coming up...
  - **Neural Networks**: A sequence of ML algorithms that are loosely modeled after the brain's neural network ([see 3B1B Video for a refresher](https://www.youtube.com/watch?v=aircAruvnKk))
  - **Deep Learning**: Refers to architectures with multiple/hidden layers (most NN models are Deep Neural Networks)
-	 - Deep learning breaks down the feature recognition process and trains that too, allowing for more responsive and fine-tunable models (ex. the MINST NN example).
+	 - Deep learning breaks down the feature recognition process and trains that too, allowing for more responsive and fine-tunable models (ex. the MNST NN example).
 	- Deep Learning and Neural Networks have been incredibly popular over the past few years, with the increase in mass data and compute power - as they are very computationally intensive to train.
 - **Transformers**: Deep Learning Models that leverage parallel computing (think lots of GPU/RAM) to maximize **Long-Short-Term Memory** - this allows for the model to make predictions based on a larger problem context. 
 	- This makes transformers very popular for  **Natural Language Processing (NLP)** - where sentence and paragraph context can be factored into things like story generators, making them much more believable (ex. [AIDungeon](https://play.aidungeon.io/))

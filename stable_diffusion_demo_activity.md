@@ -61,7 +61,10 @@ Source : https://colab.research.google.com/github/huggingface/notebooks/blob/mai
 by StabilityAI under an [OpenRAIL-M License](https://huggingface.co/spaces/CompVis/stable-diffusion-license) on [August 22nd, 2022](https://stability.ai/blog/stable-diffusion-public-release) ... like 1.5 months ago!
 
 ### Where is it?
+
 - [Hosted w/ demo on Huggingface](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original) (you can use huggingface libraries to use the model in your own colab code)
+  - Demo Here: [Stable Diffusion Space](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+
 
 - [Available on github](https://github.com/CompVis/stable-diffusion) (you could fork and build your own project with it, or look at what other work this research group is putting out)
 
@@ -100,7 +103,7 @@ Here is a functional
 - Try running the code and reading the descriptions. Don't worry if it doesn't all make sense yet, this is mostly to practice the mechanics of running such a notebook.
 - Make note of unfamiliar terms, to reasearch later
 
-[General Diffusers Tutorial Walkthrough](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb) Option Demo Notebook that goes into more details about the diffuser library and how you might use it to leverage models beyond stable diffusion.
+[General Diffusers Tutorial Walkthrough](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/diffusers_intro.ipynb) (Optional) Demo Notebook that goes into more details about the diffuser library and how you might use it to leverage models beyond stable diffusion.
 ***
 ## Stable Diffusion Activity Notebook
 
@@ -127,16 +130,17 @@ There are 3 ways to go about completing this activity (based on programming comf
     - 2c. Choosing a Good Prompt
     - 2d. Choosing a Guidance Scale
 #### Next week 
-- Step 3: Improving Images of Faces
-- Step 4: Building a Machine Learning Web App
-- Step 5: Collecting Data to Improve the Model
+- Step 3: Improving Images of Faces - add another model
+- Step 4: Building a Machine Learning Web App - share your app
+- Step 5: Collecting Data to Improve the Model - allow feedback
 #### Beyond
-- Bonus: Extensions 
+- Bonus: Extensions - Additional proejct enhancement
 
 ***
 ## STEP 0 - Setting Up
 
 - Save the notebook to *your* Google Account, otherwise you will be unable to save your edits
+   - **This would also be a good place for you to practice maintaining your code on github - create a new repo on your github account and copy your notebook to it**
 - Make sure you have a huggingface account (you will need this when you are asked to consent to model terms and to generate a write token)
 
 ## STEP 1 - Loading Pretrained Model
