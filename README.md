@@ -40,7 +40,7 @@ You can find the current [Syllabus Here](https://github.com/AI-and-Cultural-Comp
    - linear algebra terms (with examples)
 - Discussion: Data Conscience reading
 -  Navigating and using ML tools (Colab, Github, Huggingface)
-   -  Activity: Walkthrough of stable-diffusion notebook
+   -  [Activity: Walkthrough of stable-diffusion notebook](stable_diffusion_demo_activity.md)
 -  Finding and Sharing Machine Learning Research and Models
 
 ### Activities:
