@@ -28,7 +28,6 @@
     - [2b. Test Influence of STEP value](#2b-test-influence-of-step-value)
     - [2c. Choosing a Good Prompt](#2c-choosing-a-good-prompt)
     - [2d. Choosing a Guidance Scale](#2d-choosing-a-guidance-scale)
-- [Select a specific poster prompt and seed to test, then iterate through guidance scale values 2 - 21](#select-a-specific-poster-prompt-and-seed-to-test-then-iterate-through-guidance-scale-values-2---21)
   - [STEP 3 - Improving Images of Faces](#step-3---improving-images-of-faces)
   - [STEP 4 - Building a Machine Learning Web App](#step-4---building-a-machine-learning-web-app)
 - [Followup questions](#followup-questions)
@@ -159,7 +158,8 @@ Task: Generate and display 3 more images...
   - Replicate the prompt line
   - Add a **for** loop to generate multiple images
   (you'll notice that running the same code multiple times generates slightly different images)
-**  Example Code:**
+
+**Example Code:** (Feel free to use these cells if you get stuck)
   ```python
   prompt = "put your prompt here"
   image_list = []
@@ -174,9 +174,9 @@ Take note of the **4 tweakable options:**
 - "latent noise" matrix (you can fix the seed of the generator, to generate reproducable images)
   -  This allows you to produce the same image each time, for a given prompt (`latents` keyword)
 - Adjust number of steps taken: Increases quality slows inference(`num_inference_steps` keyword)
-- Prompt Test - Required argument.
+- Prompt text - First positional argument, no keyword needed.
   - Check out recommended readings from this week to learn more about prompt generation.
-- Guidance Scale - how closely prompt is followed by model (`guidance_scale` keyword)
+- Guidance Scale - how closely prompt is followed by the model (`guidance_scale` keyword)
 - There is also a scheduler option (adjusts the method of denoising image - won't be used in this demo)
 
 ## STEP 2 - generating images with more control
@@ -265,7 +265,7 @@ for m_prompt in movie_prompts:
 ```
 
 ### 2d. Choosing a Guidance Scale
-# Select a specific poster prompt and seed to test, then iterate through guidance scale values 2 - 21
+Select a specific poster prompt and seed to test, then iterate through guidance scale values 2 - 21
 ```python
 seed_value = 6703136330805487 #pick your own seed
 m_prompt = p4
@@ -321,8 +321,7 @@ def improve_image(img, factor):
     - WIth the line `pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4")` we "called" the `StableDiffusionPipeline()` function and specified that we wanted to use an already trained model with `.from_pretrained()` and then gave it a file path string "argument" that it was expecting`"CompVis/stable-diffusion-v1-4"` . We "knew" to do this, because the library documentation explains how this function should be used ([From diffusers documentation](https://huggingface.co/docs/diffusers/v0.5.1/en/api/diffusion_pipeline#diffusers.DiffusionPipeline))
     - ![0779a26a9dc2c0dfc067ac97acfd42a3.png](./images/0779a26a9dc2c0dfc067ac97acfd42a3.png)
     - ![071b32462743929f6759aee9eb4ef5a6.png](./images/071b32462743929f6759aee9eb4ef5a6.png)
-
-\- ex. search for `torch.rand()` in https://pytorch.org/docs to understand what the arguments we passed to it actually represent
-\- ex. search for  `StableDiffusionPipeline()` in https://huggingface.co/docs to find the same documentation shown above.
-\- A library's documentation should always help you determine what arguments you can include when calling a function. It can also help you better define and describe the problem you are having, if you are stuck and need help from others -  by giving you insight into what terminology and methods are being used by a given library (ex. "I am using `StableDiffusionPipeline()` and am trying to define the `guidance_scale` so that my image is tied very closely to the prompt. I see that the documentation recommends larger numbers, but I don't know what the maximum is. What value should I use?")
+  - ex. search for `torch.rand()` in https://pytorch.org/docs to understand what the arguments we passed to it actually represent
+  - ex. search for  `StableDiffusionPipeline()` in https://huggingface.co/docs to find the same documentation shown above.
+- A library's documentation should always help you determine what arguments you can include when calling a function. It can also help you better define and describe the problem you are having, if you are stuck and need help from others -  by giving you insight into what terminology and methods are being used by a given library (ex. "I am using `StableDiffusionPipeline()` and am trying to define the `guidance_scale` so that my image is tied very closely to the prompt. I see that the documentation recommends larger numbers, but I don't know what the maximum is. What value should I use?")
 - ![4e0582ca0807e9e7c15c30256080fae5.png](./images/4e0582ca0807e9e7c15c30256080fae5.png)
