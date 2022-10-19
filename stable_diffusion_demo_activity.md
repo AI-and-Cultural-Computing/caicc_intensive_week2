@@ -143,7 +143,7 @@ There are 3 ways to go about completing this activity (based on programming comf
 - Step 4: Building a Machine Learning Web App - share your app
 - Step 5: Collecting Data to Improve the Model - allow feedback
 #### Beyond
-- Bonus: Extensions - Additional proejct enhancement
+- Bonus: Extensions - Additional project enhancement
 
 ***
 ## STEP 0 - Setting Up
@@ -164,8 +164,8 @@ Task: Generate and display 3 more images...
   prompt = "put your prompt here"
   image_list = []
   for i in range(3):
-  image = (pipe(prompt).images[0])
-  image_list.append(image)
+    image = (pipe(prompt).images[0])
+    image_list.append(image)
   display(image_list[i])
   ```
 
