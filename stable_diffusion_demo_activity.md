@@ -28,6 +28,9 @@
     - [2b. Test Influence of STEP value](#2b-test-influence-of-step-value)
     - [2c. Choosing a Good Prompt](#2c-choosing-a-good-prompt)
     - [2d. Choosing a Guidance Scale](#2d-choosing-a-guidance-scale)
+- [Select a specific poster prompt and seed to test, then iterate through guidance scale values 2 - 21](#select-a-specific-poster-prompt-and-seed-to-test-then-iterate-through-guidance-scale-values-2---21)
+  - [STEP 3 - Improving Images of Faces](#step-3---improving-images-of-faces)
+  - [STEP 4 - Building a Machine Learning Web App](#step-4---building-a-machine-learning-web-app)
 - [Followup questions](#followup-questions)
 
 
@@ -156,6 +159,15 @@ Task: Generate and display 3 more images...
   - Replicate the prompt line
   - Add a **for** loop to generate multiple images
   (you'll notice that running the same code multiple times generates slightly different images)
+**  Example Code:**
+  ```python
+  prompt = "put your prompt here"
+  image_list = []
+  for i in range(3):
+  image = (pipe(prompt).images[0])
+  image_list.append(image)
+  display(image_list[i])
+  ```
 
 Take note of the **4 tweakable options:**
 
@@ -171,12 +183,18 @@ Take note of the **4 tweakable options:**
 
 ### 2a.  Set the random seeds
 
-```
-- generate random Tensor  (use following code) 
+```python
+import torch
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+generator = torch.Generator(device=device)
+
+seed = generator.seed()
+print(f"The seed for this generator is: {seed}")
 ```
 
+Generate a random Tensor:
 ```python
-generator = torch.Generator() # was getting CPU expected error when using 'cuda' device
+# generator = torch.Generator() # use this line if getting 'cuda' error
 tensor1 = torch.randn((1,4,64,64),generator = generator.manual_seed(seed))
 tensor2 = torch.randn((1,4,64,64),generator = generator.manual_seed(seed))
 # confirm generator produces the same tensor with fixed seed
@@ -226,7 +244,68 @@ for i in range (20):
 
 ### 2c. Choosing a Good Prompt
 
+Display the results of at least 5 different prompts:
+(Note, this example does not use a fixed seed, but you can add one if you like)
+```python
+p1 = "Prompt 1"
+p2 = "Prompt 2"
+p3 = "Prompt 3"
+p4 = "Prompt 4"
+p5 = "Prompt 5"
+
+movie_prompts = [p1,p2,p3,p4,p5]
+
+# generate 5 images per prompt
+for m_prompt in movie_prompts:
+  for i in range(1):
+    image = (pipe(m_prompt, num_inference_steps = 50).images[0])
+    image.save(f"{m_prompt}_v{i}.png")
+    display(image)
+    display(f"Prompt: {m_prompt}")
+```
+
 ### 2d. Choosing a Guidance Scale
+# Select a specific poster prompt and seed to test, then iterate through guidance scale values 2 - 21
+```python
+seed_value = 6703136330805487 #pick your own seed
+m_prompt = p4
+for i in range(2,21,3):
+    noise_matrix = torch.randn((1,4,64,64),generator = generator.manual_seed(seed_value))
+    image = (pipe(m_prompt, latents=noise_matrix, num_inference_steps = 50, guidance_scale=i).images[0])
+    image.save(f"{m_prompt}_v{seed_value}.G{i}.png")
+    display(image)
+    display(f"Prompt: {m_prompt}, Seed number: {seed_value}, Guidance Scale = {i}")
+```
+
+## STEP 3 - Improving Images of Faces
+Use the GFP-GAN model to improve faces in poster
+
+```python
+import requests
+import base64
+import os
+import gradio as gr
+
+def improve_image(img, factor):
+  encoded_img = gr.processing_utils.encode_pil_to_base64(img)
+  URL = #Enter URL of GFPGAN API
+  PARAMS = {"data": [encoded_img, factor]}
+  improved_b64 = requests.post(url = URL, json = PARAMS).json()["data"][0]
+  improved_img = gr.processing_utils.decode_base64_to_image(improved_b64)
+  return improved_img
+
+# uncomment to test above code 
+# m_prompt = "Movie Prompt"
+# noise_matrix = torch.randn((1,4,64,64),generator = generator.manual_seed(6703136330805487)) 
+# image = (pipe(m_prompt, latents=noise_matrix, num_inference_steps = 50, guidance_scale=5).images[0]) 
+# improved_image = improve_image(image,3)
+# display(improved_image)
+```
+
+## STEP 4 - Building a Machine Learning Web App
+
+.... To be continued
+
 
 # Followup questions
 
