@@ -57,6 +57,7 @@ Source : https://colab.research.google.com/github/huggingface/notebooks/blob/mai
     * training and processing occurs in an abstracted form - rather than pixel by pixel (think tensors)
     * improves speed and flexability
 * Curious to learn more about the math of Diffusion Models? Check out [Lil'Log's Blogpost](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)!
+* Also, [The Annotated Diffusion] (https://huggingface.co/blog/annotated-diffusion)
 
 ## Model Released: 
 by StabilityAI under an [OpenRAIL-M License](https://huggingface.co/spaces/CompVis/stable-diffusion-license) on [August 22nd, 2022](https://stability.ai/blog/stable-diffusion-public-release) ... like 1.5 months ago!
