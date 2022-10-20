@@ -39,6 +39,9 @@ You can find the current [Syllabus Here](https://github.com/AI-and-Cultural-Comp
    - pre-trained models
    - linear algebra terms (with examples)
 - Discussion: Data Conscience reading
+- Introduction to Computer Vision Notebook <a href=\"https://colab.research.google.com/github/AI-and-Cultural-Computing/caicc_intensive_week2/blob/main/hello_computer_vision.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
+
+(If Time Permits)
 -  Navigating and using ML tools (Colab, Github, Huggingface)
    -  [Activity: Walkthrough of stable-diffusion notebook](stable_diffusion_demo_activity.md)
 -  Finding and Sharing Machine Learning Research and Models
