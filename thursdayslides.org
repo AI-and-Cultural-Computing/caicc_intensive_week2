@@ -1,0 +1,43 @@
+* Welcome!
+* Anything to share?
+* Debate time
+
+ An old joke: "stealing from a few is plagiarism, stealing from many is research"
+
+ + LAION-5B
+ + github co-pilot
+ + story generation
+ + paid services
+ + copyright
+
+** links
+
+https://the-decoder.com/patient-images-in-laion-datasets-are-only-a-sample-of-a-larger-issue/
+https://www.vice.com/en/article/3ad58k/ai-is-probably-using-your-images-and-its-not-easy-to-opt-out
+https://haveibeentrained.com/
+https://www.businessinsider.com/ai-image-generators-artists-copying-style-thousands-images-2022-10
+https://twitter.com/Grady_Booch/status/1582061934181986304 (this thread)
+https://twitter.com/images_ai/status/1579333133866258432
+https://arstechnica.com/information-technology/2022/09/artist-receives-first-known-us-copyright-registration-for-generative-ai-art/
+https://arxiv.org/abs/2110.01963
+
+* stable-diffusion activity check-in
+
+ Can everyone connect to huggingface and authorize their account?
+* Finding models
+
+ From Francesca's notes:
+ https://github.com/AI-and-Cultural-Computing/caicc_intensive_week2/blob/main/CAICC_Week_2_Notes.md
+
+* Jargon file
+ - Vector space
+ - Latent space
+ - Tensor
+ - ...
+* general check-in
+
+ how's it going?
+
+ things you want for next week?
+* Building neural networks
+https://github.com/AI-and-Cultural-Computing/caicc_intensive_week2/blob/main/hello_computer_vision.ipynb
