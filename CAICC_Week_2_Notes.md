@@ -108,6 +108,17 @@ Machine Learning is a unique and fast-moving field, with novel models, approache
   - Has an active community and discussion spaces to discuss and 
   - Recently integrated with and now hosts Gradio Apps - a ML demo tool, to allow you to quickly develop interfaces for your models.
  
+ ### Research Activity:
+ 1. Start by googling a general AI topic you are interested in (robotics, text-generation, sentiment detection, anything + machine learning etc.)
+	- See if there are any news articles that reference more specific idea or technology
+ 2. Search arxiv, google, twitter - find a paper that looks interesting.
+ 3. Check to see what resources are associated with the paper (code, datasets, other papers).
+ 	- Is there a specific model being used? Have people made that model available?
+ 	- Are there any code or demo notebooks available? 
+ 	- What datasets are they using? Are those available?
+ 	- How transparent is this research? Are there any ethical issues with the research or source data?
+ 4. Summarize your findings to share out
+   	
  ***
 # Tuesday Discussion Notes
 
