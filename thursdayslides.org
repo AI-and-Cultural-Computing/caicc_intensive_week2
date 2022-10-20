@@ -13,12 +13,19 @@
 ** links
 
 https://the-decoder.com/patient-images-in-laion-datasets-are-only-a-sample-of-a-larger-issue/
+
 https://www.vice.com/en/article/3ad58k/ai-is-probably-using-your-images-and-its-not-easy-to-opt-out
+
 https://haveibeentrained.com/
+
 https://www.businessinsider.com/ai-image-generators-artists-copying-style-thousands-images-2022-10
+
 https://twitter.com/Grady_Booch/status/1582061934181986304 (this thread)
+
 https://twitter.com/images_ai/status/1579333133866258432
+
 https://arstechnica.com/information-technology/2022/09/artist-receives-first-known-us-copyright-registration-for-generative-ai-art/
+
 https://arxiv.org/abs/2110.01963
 
 * stable-diffusion activity check-in
