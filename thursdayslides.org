@@ -42,7 +42,7 @@ https://arxiv.org/abs/2110.01963
 * Finding models
 
  From Francesca's notes:
- https://github.com/AI-and-Cultural-Computing/caicc_intensive_week2/blob/main/CAICC_Week_2_Notes.md
+ https://github.com/AI-and-Cultural-Computing/caicc_intensive_week2/blob/main/CAICC_Week_2_Notes.md#engaging-with-machine-learning-research
 
  Research time:
  + Take a topic you want
