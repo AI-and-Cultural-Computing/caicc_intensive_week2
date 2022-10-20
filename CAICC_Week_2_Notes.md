@@ -100,6 +100,9 @@ Machine Learning is a unique and fast-moving field, with novel models, approache
  - [Github](github.com) - Most research groups or individuals will have their paper's code hosted on github. If you find a paper or project that looks cool - check to see if they have a github, there may be additional resources or projects.
  - [Twitter](twitter.com) ... seriously, the ML research community is very active on Twitter. Impressive projects and papers are shared around quickly. If you start following ML researchers, or folks who engage with AI in a specific domain (business, Art, tech, gaming, policy, philosophy etc.) you will start to see ML discussions, demos, and tools regularly. 
  	- Here are a couple interesting folks to follow, to get you started:
+ 	    - Research: \@_akhaliq, \@ai_pub
+ 	    - Application: \@ScottieFoxTTV , \@LumaLabsAI, 
+ 	    - Critique: \@CriticalAI , \@GiadaPistilli
 - [Huggingface.co](https://huggingface.co/) - Research Lab and Increasingly popular repository for ML Models, Datasets, and documentation
   - Attempts to implement best practices surrounding licensing, ethical data use, and bias disclosure
   - Has an active community and discussion spaces to discuss and 
