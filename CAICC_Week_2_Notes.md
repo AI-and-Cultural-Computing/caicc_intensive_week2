@@ -18,6 +18,8 @@ This is a live document that will be updated based on discussion topics and acti
 	- [Ethical Responsabilities Surrouding AI use](#ethical-responsabilities-surrouding-ai-use)
 - [Topics that merit further discussion:](#topics-that-merit-further-discussion)
 - [LNN Demo - Basic Math behind Neural Nets](#lnn-demo---basic-math-behind-neural-nets)
+	- [Outside topics / readings](#outside-topics--readings)
+	- [Data Conscious Discussion:](#data-conscious-discussion)
 
 
 # A.I. Terminology 
@@ -149,3 +151,64 @@ Machine Learning is a unique and fast-moving field, with novel models, approache
   - https://ml4a.github.io/demos/simple_forward_pass/
 - Other Neural Netowrk Demos and Tutorials: https://ml4a.github.io/ml4a/
 - Recommended Reading for a more detailed understanding of NN, Weights, and Learning Rates. Make your Own Neural Network, Part 1 (little to no math prerequisites) - One of the Provided Texts.
+- # Thursday Discussion
+
+## Outside topics / readings
+
+- Upcoming YACHT documentary at PAMCUT (AI generated Lyrics by Ross Goodwin, self-identified "data poet")
+  - https://github.com/rossgoodwin/neuralsnap
+- The Machine Stops EM Forster 1909 
+  - (older text exploring AI/ tech dependence)
+  - https://en.wikipedia.org/wiki/The_Machine_Stops
+
+## Data Conscious Discussion:
+
+- Data discussion:
+  - LAION-5B
+    - taken from "internet" web-crawl
+    - private data found in dataset (medical, personal images, violent + graphic imagery) - people implicated concerned
+    - artists concerned about their styles being "co-opted" by AI
+  - github co-pilot
+  - story generation
+  - paid services
+  - copyright
+
+Is using datasets like LAION5B okay, given those issues?
+- AI is just a tool, as long as you give attribution to it or the original dataset, then that's fine.
+  - https://www.creativebloq.com/news/ai-art-wins-competition --- shows a painting that won an award at a state fair
+- Right now, the people that build the models seem to have all the legal rights at the moment - they have legal rights to control the use of their model, but it was trained with data they did not receive rights to. 
+- How can models make sure they are not able to produce output that matches the training data?
+  - there are people arguing this is already happening (ex. google copilot)
+- AI as copyright laundering. - does the legal structure we currently have serve us in this debate?
+- AI as a "hurricane" - ethics and accountability gets lost in the complexity of the process.
+  - profit-making on non-consentual data use 
+    - "I think profit-making on non-consensual use of data makes it even more gross, but even without profit, it feels exploitive." - Carol
+  - large companies have more power in enforcing copyright vs small artists...
+  - Science vs Commercial application - standards and expectations are different (intent)
+    - Jurassic Park Quote 
+    - Norbert Weiner - Scientists have been cynical / upset about the commercialization of science for years
+    - We are at an interesting junction - as the "discoveries" in this field are dependent upon "the accumulation of data and experiences of large groups of people"
+      - new leaf, opportunity for technology to lead to new good and bad paradigms. 
+- As educators, what are the implications of us referencing and building upon these biased or unethically sourced data and models, as the discipline is emerging into public conscousness?
+- Concept of "The right to be forgotten" - do we have the right to remove data related to us from permanent records? What happens when you get immortalized.
+
+- Bias / Lack of representation in AI
+  - AI is Oriented toward production, capital, speed right now
+  - The datasets that are easiest/fastest to build are going to have bias and mis/underrepresentation 
+  - https://store.google.com/intl/en/ideas/real-tone/ Here's Google's attempt to address the issue with cameras not capturing black faces/skin well.
+  - This new technology is an opportunity as well:
+     - Having to use the language of the colonizers... how to could we turn this data into something different (possibility in the training process) "Canibalisers" - Rewrite stories with bias
+ - Automating consent of training data?
+   - Can we use another model to recognize and flag data that should not be used>?
+   - can we embed metadata flags into data?
+   - Can we corrupt data? 
+   - Data pollution as a future defense against AI alg.
+   - How will the public's relationship with data and 
+  
+ - Narrative is powerful and the responsability of the storyteller.
+   - Metamodernism
+
+- Is AI really a tool? or is it something more?
+  - Tools and technologies are also the practice that goes along with the thing (use)
+  - Scale influences the significance / meaning of AI as a tool
+    - LLM is not something that can scale to consciousness...AGI is a different method entirely 
